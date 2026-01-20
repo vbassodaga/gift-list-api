@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "dotnet publish -c Release -o ./publish",
+  "buildCommand": "dotnet publish HousewarmingRegistry.API.csproj -c Release -o ./publish",
   "outputDirectory": "publish",
   "rewrites": [
     {
