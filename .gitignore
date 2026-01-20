@@ -1,0 +1,46 @@
+# Arquivos do Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.mdb
+*.log
+*.cache
+*.config
+*.tmp
+
+# Arquivos gerados pelo sistema
+.DS_Store
+Thumbs.db
+
+# Configurações locais
+*.local
+*.env
+
+# Pacotes
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+# Logs
+*.log
+
+# Arquivos de publicação
+.publish/
+
+# Arquivos do Rider/JetBrains
+.idea/
+*.sln.iml
+
+# Arquivos do Azure
+.azure/
