@@ -3,21 +3,14 @@
   "buildCommand": "dotnet publish -c Release -o ./publish",
   "outputDirectory": "publish",
   "installCommand": "dotnet restore",
-  "framework": null,
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
   "rewrites": [
     {
       "source": "/api/:path*",
       "destination": "/api/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/:path*"
     }
   ],
   "headers": [
