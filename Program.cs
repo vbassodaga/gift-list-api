@@ -61,5 +61,6 @@ using (var scope = app.Services.CreateScope())
     dbContext.Database.Migrate();
 }
 
-app.Run();
+var port = Environment.GetEnvironmentVariable("PORT") ?? "9001";
+app.Run($"http://*:{port}");
 
